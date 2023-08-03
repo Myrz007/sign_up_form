@@ -7,6 +7,8 @@ body {
 
 #nav-container {
     width: 35%;
+    background-image: url('/images/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: 35vw 100vh;
 }
 
 #form-container {
