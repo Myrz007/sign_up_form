@@ -12,3 +12,14 @@ body {
 #form-container {
     width: 65%;
 }
+
+#form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
