@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "norse-bold";
+    src: url("fonts/Norse-Bold.woff2") format("woff2"), 
+         url("fonts/Norse-Bold.woff")  format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     height: 100vh;
     margin: 0;
