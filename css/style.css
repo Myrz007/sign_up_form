@@ -47,3 +47,9 @@ button {
     margin: 30px 0 10px 30px;
     font: bold 0.9em Arial, sans-serif;
 }
+
+p > a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
