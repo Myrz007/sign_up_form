@@ -20,6 +20,10 @@ body {
     background-size: 35vw 100vh;
 }
 
+#logo-container > img{
+    width: 20vw;
+}
+
 #form-container {
     width: 65%;
 }
