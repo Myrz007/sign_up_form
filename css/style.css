@@ -39,6 +39,11 @@ body {
     flex-direction: column;
 }
 
+label {
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
 button {
     appearance: none;
     width: 180px;
