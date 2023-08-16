@@ -6,6 +6,11 @@
     font-weight: normal;
 }
 
+:root {
+    --leaf-green: #596D48;
+    --light-gray: #E5E7EB;
+}
+
 body {
     height: 100vh;
     margin: 0;
