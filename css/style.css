@@ -34,6 +34,10 @@ body {
     padding-top: 20vh;
 }
 
+#form-container > h3 {
+    padding: 0 8vw 0 2vw;
+}
+
 #form-fields {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
