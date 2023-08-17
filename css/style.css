@@ -72,6 +72,10 @@ button {
     font: bold 0.9em Arial, sans-serif;
 }
 
+p {
+    margin-left: 2vh;
+}
+
 p > a {
     color: var(--leaf-green);
     text-decoration: none;
