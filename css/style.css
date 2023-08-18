@@ -38,6 +38,18 @@ body {
     width: 8vw;
 }
 
+#credits,
+#credits > a {
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+#credits > a {
+    text-decoration: underline;
+}
+
 #form-container {
     width: 60%;
     padding-top: 20vh;
