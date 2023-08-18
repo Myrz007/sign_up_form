@@ -25,6 +25,15 @@ body {
     background-size: 40vw 100vh;
 }
 
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font: 8em "Norse Bold", sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 #logo-container > img{
     width: 10vw;
 }
