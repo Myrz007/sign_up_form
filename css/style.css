@@ -23,6 +23,9 @@ body {
     width: 40%;
     background-image: url("/images/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: 40vw 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #logo-container {
@@ -32,10 +35,15 @@ body {
     color: white;
     font: 8em "Norse Bold", sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20vh;
 }
 
 #logo-container > img{
     width: 8vw;
+}
+
+#credits {
+    margin: 40vh 0 0 0;
 }
 
 #credits,
