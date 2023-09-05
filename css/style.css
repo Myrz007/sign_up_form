@@ -69,8 +69,11 @@ body {
 
 form {
     margin-top: 4vh;
-    padding: 1vh 14vw 4vh 2vw;
+}
+
+#fields-container {
     box-shadow: 2px 4px 12px var(--light-gray);
+    padding: 1vh 14vw 4vh 2vw;
 }
 
 #form-fields {
