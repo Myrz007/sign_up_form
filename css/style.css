@@ -88,8 +88,8 @@ form {
 }
 
 label {
-    font-size: 0.7em;
-    font-weight: 600;
+    font: 600 0.7em sans-serif;
+    color: darkslategray;
 }
 
 input {
