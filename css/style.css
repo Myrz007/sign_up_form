@@ -99,6 +99,12 @@ input {
     border-radius: 2px;
 }
 
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 2px 2px var(--light-gray);
+}
+
 button {
     appearance: none;
     width: 200px;
