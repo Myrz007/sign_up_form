@@ -105,6 +105,11 @@ input:focus {
     box-shadow: 2px 2px var(--light-gray);
 }
 
+.error.active {
+    color: red;
+    font-size: 0.8em;
+}
+
 button {
     appearance: none;
     width: 200px;
