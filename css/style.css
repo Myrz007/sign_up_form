@@ -92,6 +92,13 @@ label {
     font-weight: 600;
 }
 
+input {
+    appearance: none;
+    height: 22px;
+    border: 1px solid var(--light-gray);
+    border-radius: 2px;
+}
+
 button {
     appearance: none;
     width: 200px;
