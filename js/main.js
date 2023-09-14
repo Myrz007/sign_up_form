@@ -9,6 +9,61 @@ const password = document.getElementById('pwd');
 const pwdError = document.querySelector('#pwd + span.error');
 const confirmPwd = document.getElementById('confirm-pwd');
 
+firstName.addEventListener('input', () => {
+    if (firstName.validity.valid) {
+        fNameError.textContent = '';
+        fNameError.className = 'error';
+    }
+    else fNameErrorHandler();
+});
+
+lastName.addEventListener('input', () => {
+    if (lastName.validity.valid) {
+        lNameError.textContent = '';
+        lNameError.className = 'error';
+    }
+    else lNameErrorHandler();
+});
+
+email.addEventListener('input', () => {
+    if (email.validity.valid) {
+        emailError.textContent = '';
+        emailError.className = 'error';
+    }
+    else emailErrorHandler();
+});
+
+password.addEventListener('input', () => {
+    if (password.validity.valid) {
+        pwdError.textContent = '';
+        pwdError.className = 'error';
+    }
+    else pwdErrorHandler();
+});
+
+form.addEventListener('submit', (event) => {
+    switch (true) {
+        case !firstName.validity.valid:
+            fNameErrorHandler();
+            event.preventDefault();
+            break;
+        case !lastName.validity.valid:
+            lNameErrorHandler();
+            event.preventDefault();
+            break;
+        case !email.validity.valid:
+            emailErrorHandler();
+            event.preventDefault();
+            break;
+        case !password.validity.valid:
+            pwdErrorHandler();
+            event.preventDefault();
+            break;
+        default:
+            return;
+    }
+});
+
 function fNameErrorHandler() {
     if (firstName.validity.valueMissing) fNameError.textContent = 'You need to enter your first name.';
     
