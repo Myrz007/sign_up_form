@@ -17,6 +17,8 @@ lastName.addEventListener('input', () => validationHandler(lastName, lNameError,
 
 email.addEventListener('input', () => validationHandler(email, emailError, emailErrorHandler()));
 
+phone.addEventListener('input', () => validationHandler(phone, phoneError, phoneErrorHandler()));
+
 password.addEventListener('input', () => validationHandler(password, pwdError, pwdErrorHandler()));
 
 form.addEventListener('submit', (event) => {
@@ -31,6 +33,10 @@ form.addEventListener('submit', (event) => {
             break;
         case !email.validity.valid:
             emailErrorHandler();
+            event.preventDefault();
+            break;
+        case !phone.validity.valid:
+            phoneErrorHandler();
             event.preventDefault();
             break;
         case !password.validity.valid:
@@ -73,6 +79,12 @@ function emailErrorHandler() {
     else if (email.validity.typeMismatch) emailError.textContent = 'You need to enter a valid email address.';
 
     errorActive(email, emailError);
+}
+
+function phoneErrorHandler() {
+    if (phone.validity.valueMissing) phoneError.textContent = 'You need to enter a phone number';
+
+    errorActive(phone, phoneError);
 }
 
 function pwdErrorHandler() {
