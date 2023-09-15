@@ -21,6 +21,8 @@ phone.addEventListener('input', () => validationHandler(phone, phoneError, phone
 
 password.addEventListener('input', () => validationHandler(password, pwdError, pwdErrorHandler()));
 
+confirmPwd.addEventListener('input', () => validationHandler(confirmPwd, pwdError, pwdErrorHandler()));
+
 form.addEventListener('submit', (event) => {
     switch (true) {
         case !firstName.validity.valid:
