@@ -95,4 +95,5 @@ function pwdErrorHandler() {
     else if (password.value !== confirmPwd.value) pwdError.textContent = 'Passwords do not match.';
 
     errorActive(password, pwdError);
+    errorActive(confirmPwd, pwdError);
 }
