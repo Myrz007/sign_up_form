@@ -9,37 +9,13 @@ const password = document.getElementById('pwd');
 const pwdError = document.querySelector('#pwd + span.error');
 const confirmPwd = document.getElementById('confirm-pwd');
 
-firstName.addEventListener('input', () => {
-    if (firstName.validity.valid) {
-        fNameError.textContent = '';
-        fNameError.className = 'error';
-    }
-    else fNameErrorHandler();
-});
+firstName.addEventListener('input', () => validationHandler(firstName, fNameError, fNameErrorHandler()));
 
-lastName.addEventListener('input', () => {
-    if (lastName.validity.valid) {
-        lNameError.textContent = '';
-        lNameError.className = 'error';
-    }
-    else lNameErrorHandler();
-});
+lastName.addEventListener('input', () => validationHandler(lastName, lNameError, lNameErrorHandler()));
 
-email.addEventListener('input', () => {
-    if (email.validity.valid) {
-        emailError.textContent = '';
-        emailError.className = 'error';
-    }
-    else emailErrorHandler();
-});
+email.addEventListener('input', () => validationHandler(email, emailError, emailErrorHandler()));
 
-password.addEventListener('input', () => {
-    if (password.validity.valid) {
-        pwdError.textContent = '';
-        pwdError.className = 'error';
-    }
-    else pwdErrorHandler();
-});
+password.addEventListener('input', () => validationHandler(password, pwdError, pwdErrorHandler()));
 
 form.addEventListener('submit', (event) => {
     switch (true) {
