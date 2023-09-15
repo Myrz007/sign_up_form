@@ -64,6 +64,11 @@ form.addEventListener('submit', (event) => {
     }
 });
 
+function errorActive(input, error) {
+    input.style.borderColor = 'red';
+    error.className = 'error active';
+}
+
 function fNameErrorHandler() {
     if (firstName.validity.valueMissing) fNameError.textContent = 'You need to enter your first name.';
     
