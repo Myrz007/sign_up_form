@@ -42,6 +42,7 @@ form.addEventListener('submit', (event) => {
             event.preventDefault();
             break;
         case !password.validity.valid:
+        case password.value !== confirmPwd.value:
             pwdErrorHandler();
             event.preventDefault();
             break;
