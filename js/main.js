@@ -81,25 +81,25 @@ function validationHandler(input, error, func) {
 function fNameErrorHandler() {
     if (firstName.validity.valueMissing) fNameError.textContent = 'You need to enter your first name.';
     
-    fNameError.className = 'error active';
+    errorActive(firstName, fNameError);
 }
 
 function lNameErrorHandler() {
     if (lastName.validity.valueMissing) lNameError.textContent = 'You need to enter your last name.';
     
-    lNameError.className = 'error active';
+    errorActive(lastName, lNameError);
 }
 
 function emailErrorHandler() {
     if (email.validity.valueMissing) emailError.textContent = 'You need to enter an email address.';
     else if (email.validity.typeMismatch) emailError.textContent = 'You need to enter a valid email address.';
 
-    emailError.className = 'error active';
+    errorActive(email, emailError);
 }
 
 function pwdErrorHandler() {
     if (password.validity.valueMissing) pwdError.textContent = 'You need to enter a password.';
     else if (password.value !== confirmPwd.value) pwdError.textContent = 'Passwords do not match.';
 
-    pwdError.className = 'error active';
+    errorActive(password, pwdError);
 }
