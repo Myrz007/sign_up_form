@@ -69,6 +69,15 @@ function errorActive(input, error) {
     error.className = 'error active';
 }
 
+function validationHandler(input, error, func) {
+    if (input.validity.valid) {
+        input.style.borderColor = '';
+        error.textContent = '';
+        error.className = 'error';
+    }
+    else func;
+}
+
 function fNameErrorHandler() {
     if (firstName.validity.valueMissing) fNameError.textContent = 'You need to enter your first name.';
     
