@@ -11,7 +11,7 @@ const password = document.getElementById('pwd');
 const pwdError = document.querySelector('#pwd + span.error');
 const confirmPwd = document.getElementById('confirm-pwd');
 
-const regexName = /^[a-z]+([\s-]?[a-z]]+)*$/i;
+const regexName = /^[a-zA-ZàâäæáãåāèéêëęėēîïīįíìôōøõóòöœùûüūúÿçćčńñÀÂÄÆÁÃÅĀÈÉÊËĘĖĒÎÏĪĮÍÌÔŌØÕÓÒÖŒÙÛÜŪÚŸÇĆČŃÑ]+([\s-]?[a-zA-ZàâäæáãåāèéêëęėēîïīįíìôōøõóòöœùûüūúÿçćčńñÀÂÄÆÁÃÅĀÈÉÊËĘĖĒÎÏĪĮÍÌÔŌØÕÓÒÖŒÙÛÜŪÚŸÇĆČŃÑ]+)*$/;
 const regexMail = /^[\w\-\.]+@[\w\-\.]\.fr|com|net|org$/;
 const regexPhone = /^(\d{3}[\s-]){2}\d{4}$/;
 const regexPwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
