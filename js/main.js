@@ -67,33 +67,47 @@ function validationHandler(input, error, func) {
 
 function fNameErrorHandler() {
     if (firstName.validity.valueMissing) fNameError.textContent = 'You need to enter your first name.';
-    
+    else if (firstName.validity.patternMismatch) fNameError.textContent = 'You need to use uppercase and lowercase characters, which can be seperated by a hyphen or a space.'
+
     errorActive(firstName, fNameError);
 }
 
 function lNameErrorHandler() {
     if (lastName.validity.valueMissing) lNameError.textContent = 'You need to enter your last name.';
-    
+    else if (lastName.validity.patternMismatch) lNameError.textContent = 'You need to use uppercase and lowercase characters which can be seperated by a hyphen or a space.'
+
     errorActive(lastName, lNameError);
 }
 
 function emailErrorHandler() {
     if (email.validity.valueMissing) emailError.textContent = 'You need to enter an email address.';
-    else if (email.validity.typeMismatch) emailError.textContent = 'You need to enter a valid email address.';
+    else if (email.validity.patternMismatch) emailError.textContent = 'You need to enter a valid email address.';
 
     errorActive(email, emailError);
 }
 
 function phoneErrorHandler() {
     if (phone.validity.valueMissing) phoneError.textContent = 'You need to enter a phone number';
+    else if (phone.validity.patternMismatch) phoneError.textContent = 'Your phone number must contain numbers which can be separated by a hyphen or a space.';
 
     errorActive(phone, phoneError);
 }
 
 function pwdErrorHandler() {
-    if (password.validity.valueMissing) pwdError.textContent = 'You need to enter a password.';
-    else if (password.value !== confirmPwd.value) pwdError.textContent = 'Passwords do not match.';
+    if (password.validity.valueMissing) {
+        pwdError.textContent = 'You need to enter a password.';
 
-    errorActive(password, pwdError);
-    errorActive(confirmPwd, pwdError);
+        errorActive(password, pwdError);
+    }
+    else if (password.validity.patternMismatch) {
+        pwdError.textContent = 'You passwords must contain at least a number, an uppercase and a lowercase character.';
+
+        errorActive(password, pwdError);
+    }
+    else if (password.value !== confirmPwd.value) {
+        pwdError.textContent = 'Passwords do not match.';
+
+        errorActive(password, pwdError);
+        errorActive(confirmPwd, pwdError);
+    }
 }
