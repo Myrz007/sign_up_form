@@ -30,31 +30,31 @@
                 <div id="form-fields">
                     <div class="form-field">
                         <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname" name="user_fname" placeholder="Ex: John" required>
+                        <input type="text" id="fname" name="user_fname" placeholder="Ex: John" pattern="^[a-zA-ZàâäæáãåāèéêëęėēîïīįíìôōøõóòöœùûüūúÿçćčńñÀÂÄÆÁÃÅĀÈÉÊËĘĖĒÎÏĪĮÍÌÔŌØÕÓÒÖŒÙÛÜŪÚŸÇĆČŃÑ]+([\s\-]?[a-zA-ZàâäæáãåāèéêëęėēîïīįíìôōøõóòöœùûüūúÿçćčńñÀÂÄÆÁÃÅĀÈÉÊËĘĖĒÎÏĪĮÍÌÔŌØÕÓÒÖŒÙÛÜŪÚŸÇĆČŃÑ]+)*$" required>
                         <span class="error" aria-live="polite"></span>
                     </div>
                 
                     <div class="form-field">
                         <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname" name="user_lname" placeholder="Ex: Doe" required>
+                        <input type="text" id="lname" name="user_lname" placeholder="Ex: Doe" pattern="^[a-zA-ZàâäæáãåāèéêëęėēîïīįíìôōøõóòöœùûüūúÿçćčńñÀÂÄÆÁÃÅĀÈÉÊËĘĖĒÎÏĪĮÍÌÔŌØÕÓÒÖŒÙÛÜŪÚŸÇĆČŃÑ]+([\s\-]?[a-zA-ZàâäæáãåāèéêëęėēîïīįíìôōøõóòöœùûüūúÿçćčńñÀÂÄÆÁÃÅĀÈÉÊËĘĖĒÎÏĪĮÍÌÔŌØÕÓÒÖŒÙÛÜŪÚŸÇĆČŃÑ]+)*$" required>
                         <span class="error" aria-live="polite"></span>
                     </div>
                 
                     <div class="form-field">
                         <label for="email">EMAIL</label>
-                        <input type="mail" id="email" name="user_email" placeholder="Ex: john.doe@google.com" required>
+                        <input type="email" id="email" name="user_email" placeholder="Ex: john.doe@google.com" pattern="^[0-9A-Za-z_\.\-]+@[0-9A-Za-z_\.\-]+\.fr|com|net|org$" required>
                         <span class="error" aria-live="polite"></span>
                     </div>
                 
                     <div class="form-field">
                         <label for="phone-num">PHONE NUMBER</label>
-                        <input type="tel" id="phone-num" name="user_phone" placeholder="Ex: 123 456 7890 or 123-456-7890" required>
+                        <input type="tel" id="phone-num" name="user_phone" placeholder="Ex: 123 456 7890 or 123-456-7890" pattern="^(\d{3}[\s\-]){2}\d{4}$" required>
                         <span class="error" aria-live="polite"></span>
                     </div>
                 
                     <div class="form-field">
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="user_pwd" required>
+                        <input type="password" id="pwd" name="user_pwd" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" required>
                         <span class="error" aria-live="polite"></span>
                     </div>
                 
