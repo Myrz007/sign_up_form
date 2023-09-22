@@ -33,13 +33,13 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    font: 8em "Norse Bold", sans-serif;
+    font: 6em "Norse Bold", sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 20vh;
 }
 
 #logo-container > img{
-    width: 8vw;
+    width: 6vw;
 }
 
 #credits {
