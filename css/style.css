@@ -144,3 +144,14 @@ p > a {
         width: 8vw;
     }
 }
+
+@media (max-width: 664px) {
+    #form-container > h3 {
+        padding-right: 0;
+    }
+
+    #fields-container {
+        width: 60vw;
+        padding-right: 20vw;
+    }
+}
