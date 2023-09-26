@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Norse Bold";
-    src: url("/fonts/Norse-Bold.woff2") format("woff2"), 
-         url("/fonts/Norse-Bold.woff")  format("woff");
+    src: url("../fonts/Norse-Bold.woff2") format("woff2"), 
+         url("../fonts/Norse-Bold.woff")  format("woff");
     font-style: normal;
     font-weight: normal;
 }
@@ -21,7 +21,7 @@ body {
 
 #nav-container {
     width: 40%;
-    background-image: url("/images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: 40vw 100vh;
     display: flex;
     flex-direction: column;
